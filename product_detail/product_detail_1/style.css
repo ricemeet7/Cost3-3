@@ -1,0 +1,84 @@
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.product_detail_1{
+  flex:1;
+  padding: 63px 0 122px 0;
+}
+/* .product_detail_1 h1{} */
+.product_detail_1 .container{
+  display: flex;
+  gap: 64px;
+  margin-top: 30px;
+}
+.product_detail_1 .img{
+  max-width: 400px;
+}
+.product_detail_1 img{
+  width: 100%;
+  vertical-align: bottom;
+}
+.product_detail_1 .detail_info_box{
+  max-width: 336px;
+}
+.product_detail_1 .text2{
+  margin-top: 30px;
+}
+.product_detail_1 .price{
+  margin-top: 30px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+.product_detail_1 .specitication_box{
+  margin-top: 30px;
+  display: flex;
+}
+/* .product_detail_1 .category_box{} */
+.product_detail_1 .category{
+font-size: 0.75rem;
+line-height: 1.125rem;}
+.product_detail_1 .value_box{
+  margin-left: 28px;
+}
+.product_detail_1 .value{
+font-size: 0.75rem;
+line-height: 1.125rem;}
+.product_detail_1 .back_to_products_box{
+  text-align: center;
+  margin-top: 60px;
+}
+.product_detail_1 .back_to_products{
+text-decoration: none;
+color: #000;
+}
+
+
+
+/*---------------------------  
+　　　レスポンシブ対応
+---------------------------*/
+@media screen and (max-width:900px) {
+
+.product_detail_1 .container{
+  display: block;
+  /* gap: 64px;
+  margin-top: 30px; */
+}
+
+.product_detail_1 .img{
+  max-width: 100%;
+}
+.product_detail_1 img{
+  width: 100%;
+}
+
+.product_detail_1 .detail_info_box{
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+
+
+}

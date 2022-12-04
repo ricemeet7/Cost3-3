@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  flex: 1;
+  padding-top: 63px;
+  max-width: 593px;
+}
+
+/* .about h2{} */
+.about p {
+  margin-top: 30px;
+  line-height: 1.625rem;
+}
+
+.about p + p{
+  margin-bottom: 130px;
+}
+

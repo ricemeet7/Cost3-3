@@ -1,0 +1,178 @@
+*{
+  box-sizing: border-box;
+  /*font-size 14,21*/
+  font-size: 0.875rem;
+  line-height: 1.3125rem; 
+  /* 全称セレクタでフォントサイズやラインハイト設定しても反映されてない！！！！ */
+}
+body {
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+/*font-size 14,21*/
+h2,
+.viewmore,
+.pagination_1,
+.pagination_2,
+.hum_menu,
+p {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+/*font-size 12,18*/
+.sns,
+.back_to_products,
+.product_wrap,
+.product_name,
+.price 
+{
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+/*font-size 10.15*/
+.copyright {
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
+}
+
+a{
+  text-decoration: none;
+  color:#000;
+  transition:all .5s;
+}
+a:hover{
+  opacity: 0.7;
+}
+
+
+/*--------------------------- 
+      　　　Header
+---------------------------*/
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 32px 0 15px 0;
+  background-color: #fff;
+  z-index: 5;
+}
+.top_fixed_part{
+  display: flex;
+  justify-content: space-between;
+}
+.header .logo{width: 180px; height: 25px; }
+.header .logo img{ width: 100%;}
+/*　humberger menu icon */
+#menu_btn_check{
+  display: none;
+  z-index: 10;
+}
+.hum_menu_btn{ width: 30px; height: 25px;  }
+.hum_menu_btn .menu_btn{ display: inline-block; display: flex; flex-direction: column; gap:9px; width: 100%; height: 100%; justify-content: center; cursor: pointer;}
+.hum_menu_btn .menu_btn .hum_line_top{width: 30px; height: 2px; background-color: black; transition: .5s; z-index: 10;
+  /* transform:rotate(-45deg); */
+}
+.hum_menu_btn .menu_btn .hum_line_bottom{ width: 30px; height: 2px; background-color: black; transition: .5s; z-index: 10;
+  /* transform:rotate(45deg); */
+}
+/* menu(hidden part) */
+/* .hidden_nav{} */
+.hidden_nav .menu_list{ 
+  padding: 36px 50px;
+  position: fixed; 
+  z-index: 10;
+  top: 0;
+  left: -300px;
+  /* left:0; */
+  transition:all 0.5s ;
+}
+.hidden_nav .menu_list li{margin-bottom: 14px; }
+.hidden_nav .menu_list a{ text-decoration: none; color: white; }
+
+
+#mask, .hidden_nav .mask {
+  background-color: #000;
+  opacity: .8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  z-index: 5;
+  cursor: pointer;
+  display: none;
+}
+/* humberger menu clicked */
+/* menu list */
+/* humberger icon */
+
+#menu_btn_check:checked ~ .menu_btn{
+  cursor: pointer;
+}
+#menu_btn_check:checked ~ .menu_btn .hum_line_top{
+  position: absolute;
+  background-color: #fff;
+  /* transform-origin: 50% 50%; */
+  transform:rotate(45deg);
+}
+#menu_btn_check:checked ~ .menu_btn .hum_line_bottom{
+  background-color: #fff;
+  /* transform-origin: 50% 50%; */
+  transform: rotate(-45deg);
+}
+/* background(mask) */
+
+
+
+/*---------------------------
+           Footer
+---------------------------*/
+.footer{
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer .sns{
+  display: flex;
+  gap:30px;
+}
+.footer .sns a{
+  text-decoration: none;
+  color:#000;
+}
+
+
+
+
+/*---------------------------  
+　　　レスポンシブ対応
+---------------------------*/
+@media screen and (max-width:900px) {
+/*---------------------------
+           Footer
+---------------------------*/
+.footer{
+  display: block;
+}
+.footer small{
+  margin-top: 5px;
+
+display: inline-block;
+}
+
+}
+
+
+
+
+
+
+
+

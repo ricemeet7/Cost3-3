@@ -1,0 +1,53 @@
+.company{
+  padding: 53px 0 177px 0;
+}
+.company .container{
+  max-width: 600px;
+
+}
+.company_info{
+margin-top: 31px;
+}
+.company tr{
+  /* display: inline-block; */
+  /* padding: 20px 0 20px; */
+  border-top: 1px solid #DCDBDB;
+  text-align: left;
+}
+.company tr:first-child{
+  border-top: none;
+}
+.company th{
+  padding: 20px 0 20px;
+  width: 180px;
+}
+.company td{
+  padding: 20px 0 20px;
+  width: 420px;
+}
+.company .google_map{
+  margin-top: 40px;
+  filter: grayscale(100%)
+}
+.company .google_map iframe{
+  width: 100%;
+}
+/*---------------------------  
+　　　レスポンシブ対応
+---------------------------*/
+@media screen and (max-width:900px) {
+ 
+  .company th,
+  .company td{
+    display: block;
+    width:100%;
+
+  }
+
+.company th{
+  padding: 20px 0 0;
+}
+
+
+
+}

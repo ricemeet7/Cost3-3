@@ -1,0 +1,168 @@
+.products {
+  padding: 63px 0 122px 0;
+}
+
+.products .grid_container {
+  display: grid;
+  column-gap: 2.578125%;
+  row-gap: 40px;
+  margin-top: 30px;
+}
+
+.products .grid_container .item_1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.products .grid_container .item_2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.products .grid_container .item_3 {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.products .grid_container .item_4 {
+  grid-row: 1;
+  grid-column: 4;
+}
+
+.products .grid_container .item_5 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.products .grid_container .item_6 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.products .grid_container .item_7 {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.products .grid_container .item_8 {
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.products .grid_container .item_9 {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.products .grid_container .item_10 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.products .grid_container .item_11 {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.products .grid_container .item_12 {
+  grid-row: 3;
+  grid-column: 4;
+}
+
+.products .item {
+  max-width: 100%;
+}
+
+.products .item img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.products .item .product_name {
+  margin-top: 10.61px;
+}
+
+.products .pagination {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* .products .pagination .pagination_1{} */
+.products .pagination .pagination_2 {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #000;
+}
+
+
+/*---------------------------  
+　　　レスポンシブ対応
+---------------------------*/
+@media screen and (max-width:900px) {
+  .products .grid_container {
+    column-gap:
+     6.00677%;
+  }
+
+  .products .grid_container .item_1 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .products .grid_container .item_2 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .products .grid_container .item_3 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .products .grid_container .item_4 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .products .grid_container .item_5 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .products .grid_container .item_6 {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .products .grid_container .item_7 {
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  .products .grid_container .item_8 {
+    grid-row: 4;
+    grid-column: 2;
+  }
+
+  .products .grid_container .item_9 {
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  .products .grid_container .item_10 {
+    grid-row: 5;
+    grid-column: 2;
+  }
+
+  .products .grid_container .item_11 {
+    grid-row: 6;
+    grid-column: 1;
+  }
+
+  .products .grid_container .item_12 {
+    grid-row: 6;
+    grid-column: 2;
+  }
+
+
+}
